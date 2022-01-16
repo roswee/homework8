@@ -4,51 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=WebStudio, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Praca domowa #2</title>
 </head>
 <body>
-    <header>
+    <header class=header>
         <nav>
-            <a href="#">WebStudio</a>
-            <ul>
-                <li><a href="#">Agencja</a></li>
-                <li><a href="./portfolio.html">Porfolio</a></li>
-                <li><a href="#">Kontakt</a></li>
+            <a href="index.html" rel="home" class="logo"><span class="logo-color">Web</span>Studio</a>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="index.html" class="nav-link">Agencja</a></li>
+                <li class="nav-list-item"><a href="./portfolio.html" class="nav-link">Porfolio</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-link">Kontakt</a></li>
             </ul>
         </nav>
-            <a href="mailto:info@devstudio.com">
+            <div class="contacts">
+            <a href="mailto:info@devstudio.com" class="nav-link">
                 info@devstudio.com 
             </a> 
-            <a href="tel:+48111111111">+48 111 111 111</a>    
+            <a href="tel:+48111111111" class="nav-link">+48 111 111 111</a>             
+            </div>  
     </header>
     <main>
-        <h1>EFEKTYWNE ROZWIĄZANIA <BR>DLA WASZEGO BIZNESU
-            <button type="button">Zamów usługę</button>
+        <h1>Efektywne rozwiązania
+            dla Twojego biznesu
+            <button type="button" class="btn-order">Zamów usługę</button>
         </h1>
-        <div>
+        <div class="feature">
             <h3>Lorem ipsum</h3>
-            Lorem ipsum dolor sit amet, consectetur
+            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada
+            non sodales dui. Interdum et malesuada</p>
         </div>
-        <div>
+        <div class="feature">
             <h3>Lorem ipsum</h3>
-            Lorem ipsum dolor sit amet, consectetur
+            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada
+            non sodales dui. Interdum et malesuada</p>
         </div>
-        <div>
+        <div class="feature">
             <h3>Lorem ipsum</h3>
-            Lorem ipsum dolor sit amet, consectetur
+            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada
+            non sodales dui. Interdum et malesuada</p>
         </div>
-        <div>
+        <div class="feature">
             <h3>Lorem ipsum</h3>
-            Lorem ipsum dolor sit amet, consectetur
+            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada
+            non sodales dui. Interdum et malesuada</p>
         </div> 
         <section>
         <h2>Czym się zajmujemy</h2>
@@ -80,11 +86,11 @@
 
         </ul>
         </section>
-        <section>
+        <section class="team">
         <h2>Nasz zespół</h2>
         <ul>
             <li>
-                <figure><img
+                <figure class="team-member"><img
                 src="images/photo4.jpg"
                 alt="Mr number 1, Product Designer"
                 width="270"
@@ -96,7 +102,7 @@
                 </figcaption>
                 </figure>
             </li>
-            <li><figure>
+            <li><figure class="team-member">
                 <img
                 src="images/photo5.jpg"
                 alt="the only one women in management, Frontend Developer"
@@ -109,7 +115,8 @@
                 </figcaption>
                 </figure>
             </li>
-            <li><figure><img
+            <li><figure class="team-member">
+                    <img
                 src="images/photo6.jpg"
                 alt="Mr nr 2, Marketing"
                 width="270"
@@ -121,7 +128,7 @@
                 </figcaption>
                 </figure>
             </li>
-            <li><figure>
+            <li><figure class="team-member">
                 <img
                 src="images/photo7.jpg"
                 alt="Mr nr 3, UI Designer"
@@ -140,12 +147,12 @@
 
 
     </main>
-    <footer>
-        <a href="#">WebStudio</a>
-        <address>
-            m. Warszawa, Aleje Jerozolimskie 21<br>
-            <a href="mailto:info@example.com">info@example.com</a><br>
-            <a href=tel:+48111111111>+48 111 111 111</a><br>
+    <footer class="footer">
+        <a class="logo" href="index.html"><span class="logo-color">Web</span>Studio</a>
+        <address class="address">
+            m. Warszawa, Aleje Jerozolimskie 21
+            <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer-link" href=tel:+48111111111>+48 111 111 111</a>
         </address>
 
     </footer>

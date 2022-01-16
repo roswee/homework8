@@ -1,0 +1,164 @@
+
+:root {
+    --main-font: "Roboto", serif;
+    --second-font: "Raleway", serif;
+    --first-color: #212121;
+    --second-color: #2196F3;
+    --third-color: #757575;
+    --background-color: #2F303A;
+    --second-background-color:#F5F4FA;
+
+}
+body {
+    font-family: var(--main-font);
+    color:inherit;
+}
+ /* Nav */
+
+
+.logo-color, .logo-color:visited, .logo-color:hover {
+    color:var(--second-color)
+}
+
+.logo, .logo:visited, .logo:hover {
+    font-family: var(--second-font);   
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    text-decoration: none;
+    color:var(--first-color)
+}
+
+
+
+nav {
+    text-decoration: none;
+}
+
+.nav-link, .nav-link:visited {
+    text-decoration: none;
+    color:inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
+}
+
+.nav-link:hover, .nav-link::after {
+    color:var(--second-color);
+    text-decoration: underline;
+    
+}
+
+
+
+
+/* Main site - main objects */
+
+ h1 {
+     font-weight: 900;
+     text-transform: uppercase;
+     white-space:pre-line;   
+     color: #ffffff;
+     text-align: center;
+     background: var(--background-color);
+     width: 1600px;
+     height: 600px;
+     left: 0px;
+     top: 80px;
+
+    }
+
+.btn-order {
+    background-color: var(--second-color);
+    color: white;
+
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.feature-description {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--third-color)
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team {
+    background-color: var(--second-background-color);
+}
+
+.team-member {
+    background-color: white;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--background-color);
+    white-space: pre;
+}
+
+.logo-footer {
+    color:white;
+}
+
+.footer > .logo {
+    color: white;
+}
+
+address {
+    color:white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.714;
+    
+}
+.footer-link:hover {
+    color:var(--second-color)
+}
+
+/* portfolio - main objects */
+
+.select-buttons {
+    background-color: var(--second-background-color);
+    cursor: pointer;
+}
+
+.select-buttons:hover {
+    background-color: var(--second-color);
+    color:white
+}
+
+.porfolio-items-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+figcaption {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+.porfolio-items {
+    border: 1px solid #eeeeee;
+}
