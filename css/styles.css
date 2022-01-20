@@ -35,9 +35,8 @@ nav {
     text-decoration: none;
 }
 
-.nav-link, .nav-link:visited {
+.nav-link, .nav-link:visited, .nav-contacts {
     text-decoration: none;
-    color:inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -45,12 +44,19 @@ nav {
 
 }
 
+.nav-link, .nav-link:visited {
+    color:inherit;
+}
+
+.nav-contacts {
+    color: var(--third-color)
+}
 .nav-link:hover, .nav-link::after {
     color:var(--second-color);
-    text-decoration: underline;
     
 }
 
+.nav-contact {color: var(--second-color);}
 
 
 
@@ -73,6 +79,7 @@ nav {
 .btn-order {
     background-color: var(--second-color);
     color: white;
+    cursor: pointer;
 
 }
 
