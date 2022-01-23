@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=WebStudio, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -11,150 +12,165 @@
     <title>Praca domowa #2</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header class=header>
-        <nav>
+        <nav class="nav">
+           <div class="container">
             <a href="index.html" rel="home" class="logo"><span class="logo-color">Web</span>Studio</a>
             <ul class="nav-list">
                 <li class="nav-list-item"><a href="index.html" class="nav-link">Agencja</a></li>
                 <li class="nav-list-item"><a href="./portfolio.html" class="nav-link">Porfolio</a></li>
                 <li class="nav-list-item"><a href="#" class="nav-link">Kontakt</a></li>
             </ul>
-        </nav>
             <div class="contacts">
             <a href="mailto:info@devstudio.com" class="nav-contacts">
                 info@devstudio.com 
             </a> 
             <a href="tel:+48111111111" class="nav-contacts">+48 111 111 111</a>             
-            </div>  
+            </div> 
+            </div>
+        </nav> 
     </header>
     <main>
-        <h1>Efektywne rozwiązania
-            dla Twojego biznesu
+        <!-- MAIN -->
+           <h1>Efektywne rozwiązania
+            dla Waszego biznesu
             <button type="button" class="btn-order">Zamów usługę</button>
-        </h1>
-        <div class="feature">
-            <h3>Lorem ipsum</h3>
-            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada</p>
-        </div>
-        <div class="feature">
-            <h3>Lorem ipsum</h3>
-            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada</p>
-        </div>
-        <div class="feature">
-            <h3>Lorem ipsum</h3>
-            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada</p>
-        </div>
-        <div class="feature">
-            <h3>Lorem ipsum</h3>
-            <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nam vel arcu sem. Sed
-            non sodales dui. Interdum et malesuada</p>
-        </div> 
-        <section>
-        <h2>Czym się zajmujemy</h2>
-        <ul>
-            <li>
-                <img
-                src="images/photo1.jpg"
-                alt="tablet woth wireless keyboard"
-                width="370"
-                height="294"
-                />
-            </li>
-            <li>
-                <img
-                src="images/photo2.jpg"
-                alt="Smartphone with computer in background"
-                width="370"
-                height="294"
-                />
-            </li>
-            <li>
-                <img
-                src="images/photo3.jpg"
-                alt="tablet with color palette"
-                width="370"
-                height="294"
-                />  
-            </li>
-
-        </ul>
-        </section>
-        <section class="team">
-        <h2>Nasz zespół</h2>
-        <ul>
-            <li>
-                <figure class="team-member"><img
-                src="images/photo4.jpg"
-                alt="Mr number 1, Product Designer"
-                width="270"
-                height="260"
-                /> 
-                <figcaption>
-                    <b>John Doe</b><br/>
-                    Product Designer
-                </figcaption>
-                </figure>
-            </li>
-            <li><figure class="team-member">
-                <img
-                src="images/photo5.jpg"
-                alt="the only one women in management, Frontend Developer"
-                width="270"
-                height="260"
-                />
-                <figcaption>
-                    <b>John Doe</b><br/>
-                    Frontend Developer
-                </figcaption>
-                </figure>
-            </li>
-            <li><figure class="team-member">
+          </h1>
+          <!-- SECTION WITH FEATURES -->
+        <div class="container">
+           <section class="section">
+            <ul class="feature">
+                <li class="feature-item">
+                <h3>Lorem ipsum</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada</p>
+                </li>
+                <li class="feature-item">
+                    <h3>Lorem ipsum</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada</p>
+                    </li>
+                <li class="feature-item">
+                    <h3>Lorem ipsum</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada</p>
+                </li>
+                <li class="feature-item">
+                    <h3>Lorem ipsum</h3>
+                    <p class="feature-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada</p>
+                </li> 
+            </ul>
+            </section>
+ <!-- SECTION ABOUT OUR JOB -->
+            <section class="section">
+            <h2>Czym się zajmujemy</h2>
+            <ul class="job-list">
+                <li class="job-item">
                     <img
-                src="images/photo6.jpg"
-                alt="Mr nr 2, Marketing"
-                width="270"
-                height="260"
-                />
-                <figcaption>
-                    <b>John Doe</b><br/>
-                    Marketing
-                </figcaption>
-                </figure>
-            </li>
-            <li><figure class="team-member">
-                <img
-                src="images/photo7.jpg"
-                alt="Mr nr 3, UI Designer"
-                width="270"
-                height="260"
-                />
-                <figcaption>
-                    <b>John Doe</b><br/>
-                    UI Designer
-                </figcaption>
-                </figure>
-            </li>
-        </ul>
-        </section>
+                    src="images/photo1.jpg"
+                    alt="tablet woth wireless keyboard"
+                    width="370"
+                    height="294"
+                    />
+                </li>
+                <li class="job-item">
+                    <img
+                    src="images/photo2.jpg"
+                    alt="Smartphone with computer in background"
+                    width="370"
+                    height="294"
+                    />
+                </li>
+                <li class="job-item">
+                    <img
+                    src="images/photo3.jpg"
+                    alt="tablet with color palette"
+                    width="370"
+                    height="294"
+                    />  
+                </li>
 
-
-
+            </ul>
+            </section>
+ <!-- SECTION TEAM -->
+            <section class="team-section">
+            <h2>Nasz zespół</h2>
+            <ul class="team-list">
+                <li class="team-item">
+                    <figure class="team-member"><img
+                    src="images/photo4.jpg"
+                    alt="Mr number 1, Product Designer"
+                    width="270"
+                    height="260"
+                    /> 
+                    <figcaption class="team-member-about">
+                        <span class="team-member-name">John Doe</span>
+                        <span  class="team-member-about-text">Product Designer</span>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li class="team-item">
+                    <figure class="team-member">
+                    <img
+                    src="images/photo5.jpg"
+                    alt="the only one women in management, Frontend Developer"
+                    width="270"
+                    height="260"
+                    />
+                    <figcaption class="team-member-about">
+                        <span class="team-member-name">John Doe</span>
+                        <span  class="team-member-about-text">Frontend Developer</span>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li class="team-item">
+                    <figure class="team-member">
+                        <img
+                    src="images/photo6.jpg"
+                    alt="Mr nr 2, Marketing"
+                    width="270"
+                    height="260"
+                    />
+                    <figcaption class="team-member-about">
+                        <span class="team-member-name">John Doe</span>
+                        <span  class="team-member-about-text">Marketing</span>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li class="team-item">
+                    <figure class="team-member">
+                    <img
+                    src="images/photo7.jpg"
+                    alt="Mr nr 3, UI Designer"
+                    width="270"
+                    height="260"
+                    />
+                    <figcaption class="team-member-about">
+                        <span class="team-member-name">John Doe</span>
+                        <span  class="team-member-about-text">UI Designer</span>
+                    </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            </section>
+        </div>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
-        <a class="logo" href="index.html"><span class="logo-color">Web</span>Studio</a>
+        <div class="container">
+        <a class="logo" rel="home" href="index.html"><span class="logo-color">Web</span><span class="logo-footer">Studio</span></a>
         <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
             <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
             <a class="footer-link" href=tel:+48111111111>+48 111 111 111</a>
         </address>
-
+    </div>
     </footer>
     
 </body>

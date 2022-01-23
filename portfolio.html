@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,121 +13,128 @@
 </head>
 <body>
     <header class=header>
-        <nav>
+        <nav class="nav">
+           <div class="container">
             <a href="index.html" rel="home" class="logo"><span class="logo-color">Web</span>Studio</a>
             <ul class="nav-list">
                 <li class="nav-list-item"><a href="index.html" class="nav-link">Agencja</a></li>
                 <li class="nav-list-item"><a href="./portfolio.html" class="nav-link">Porfolio</a></li>
                 <li class="nav-list-item"><a href="#" class="nav-link">Kontakt</a></li>
             </ul>
-        </nav>
             <div class="contacts">
             <a href="mailto:info@devstudio.com" class="nav-contacts">
                 info@devstudio.com 
             </a> 
             <a href="tel:+48111111111" class="nav-contacts">+48 111 111 111</a>             
-            </div>  
+            </div> 
+            </div>
+        </nav> 
     </header>
     <main>
+        <div class="container">
+            <section class=section>
         <ul class="select-menu">
-        <li><button type="button" class="select-buttons">Wszystkie</button></li>
-        <li><button type="button" class="select-buttons">Strony</button></li>
-        <li><button type="button" class="select-buttons">Aplikacje</button></li>
-        <li><button type="button" class="select-buttons">Dizajn</button></li>
-        <li><button type="button" class="select-buttons">Marketing</button></li>
-        </ul>
-        <ul>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/technocrack.jpg" alt="technocrack" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Technocrack</h4>
-                        Strona internetowa
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/new orleanVSgolden star.jpg" alt="Grafika New Orlean vs Golden Star" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Grafika New Orlean vs Golden Star</h4>
-                        Dizajn
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/seafood_restaurant.jpg" alt="Restauracja Seafood" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Restauracja Seafood</h4>
-                        Aplikacja
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/project prime.jpg" alt="Projekt Prime" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Projekt Prime</h4>
-                        Marketing
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/project boxes.jpg" alt="Projekt Boxes" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Projekt Boxes</h4>
-                        Aplikacja
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/Inspiration has no Borders.jpg" alt="Inspiracje nie mają granic" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Inspiration has no Borders</h4>
-                        Strona internetowa
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/limited ediction magazine.jpg" alt="Magazyn Limited Edition" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Magazyn Limited Edition</h4>
-                        Dizajn
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/lab project.jpg" alt="Projekt lab" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Projekt Lab</h4>
-                        Marketing
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="porfolio-items">
-                    <img src="images/portfolio/growing business.jpg" alt="Growing business" width="370px" height="294px">
-                    <figcaption>
-                        <h4 class="portfolio-items-name">Growing business</h4>
-                        Aplikacja
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
+            <li><button type="button" class="select-buttons">Wszystkie</button></li>
+            <li><button type="button" class="select-buttons">Strony</button></li>
+            <li><button type="button" class="select-buttons">Aplikacje</button></li>
+            <li><button type="button" class="select-buttons">Dizajn</button></li>
+            <li><button type="button" class="select-buttons">Marketing</button></li>
+            </ul>
+            <ul class="portfolio">
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/technocrack.jpg" alt="technocrack" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Technocrack</h4>
+                            Strona internetowa
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/new orleanVSgolden star.jpg" alt="Grafika New Orlean vs Golden Star" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Grafika New Orlean vs Golden Star</h4>
+                            Dizajn
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/seafood_restaurant.jpg" alt="Restauracja Seafood" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Restauracja Seafood</h4>
+                            Aplikacja
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/project prime.jpg" alt="Projekt Prime" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Projekt Prime</h4>
+                            Marketing
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/project boxes.jpg" alt="Projekt Boxes" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Projekt Boxes</h4>
+                            Aplikacja
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/Inspiration has no Borders.jpg" alt="Inspiracje nie mają granic" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Inspiration has no Borders</h4>
+                            Strona internetowa
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/limited ediction magazine.jpg" alt="Magazyn Limited Edition" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Magazyn Limited Edition</h4>
+                            Dizajn
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/lab project.jpg" alt="Projekt lab" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Projekt Lab</h4>
+                            Marketing
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="porfolio-items">
+                        <img src="images/portfolio/growing business.jpg" alt="Growing business" width="370px" height="294px">
+                        <figcaption class="portfolio-items-cap">
+                            <h4 class="portfolio-items-name">Growing business</h4>
+                            Aplikacja
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        </div>
     </main>
     <footer class="footer">
-        <a class="logo" href="index.html"><span class="logo-color">Web</span>Studio</a>
+        <div class="container">
+        <a class="logo" rel="home" href="index.html"><span class="logo-color">Web</span><span class="logo-footer">Studio</span></a>
         <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
             <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
             <a class="footer-link" href=tel:+48111111111>+48 111 111 111</a>
         </address>
-
+        </div>
     </footer>
     
 </body>
