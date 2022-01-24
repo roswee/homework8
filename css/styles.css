@@ -53,13 +53,7 @@ body {
     text-decoration: none;
     display: flex;
     height: 80px;
-    align-items: center;
-    
-}
-
-.logo {
-    padding-left: 15px;
-    padding-right: 46px;
+    align-items: center;    
 }
 .logo-color, .logo-color:visited, .logo-color:hover {
     color:var(--second-color)
@@ -251,9 +245,10 @@ h2 {
 
 footer {
     background-color: var(--background-color);
-    white-space: pre;
     padding-top: 60px;
+    white-space: pre-line;
 }
+
 
 .logo-footer {
     color:white;
@@ -326,6 +321,7 @@ figcaption {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+    padding: 20px 24px;
 }
 .porfolio-items {
     border: 1px solid #eeeeee;
@@ -335,4 +331,8 @@ figcaption {
 
 .portfolio-items-cap {
     padding-left: 24px;
+}
+
+.portoflio-item-descript {
+    color: var(--third-color);
 }
