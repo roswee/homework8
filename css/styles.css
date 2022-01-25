@@ -34,7 +34,6 @@ ol {
 body {
     font-family: var(--main-font);
     color:inherit;
-    width: 1600px;
 }
 
 .container {
@@ -115,7 +114,6 @@ body {
      color: #ffffff;
      text-align: center;
      background: var(--background-color);
-     width: 1600px;
      height: 600px;
      padding-top: 200px;
      padding-bottom: 200px;
