@@ -125,7 +125,7 @@ body {
      text-align: center;
      background: var(--background-color);
      height: 600px;
-     background-image: linear-gradient(to left top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),  url(images/background.jpg);
+     background-image: linear-gradient(to left top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),  url(../images/background.jpg);
      background-repeat: no-repeat;
      background-position: 50% 50%;
      background-size: 1600px;
