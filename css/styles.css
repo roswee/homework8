@@ -453,6 +453,7 @@ figcaption {
   letter-spacing: 0.03em;
   padding: 20px 24px;
   text-decoration: none;
+  color: inherit;
 }
 .porfolio-items {
   border: 1px solid #eeeeee;
@@ -480,9 +481,5 @@ a.porfolio-link {
 }
 
 h4 {
-<<<<<<< HEAD
   color: black;
-=======
-    color:black;
->>>>>>> 90b4131958ea83b08fc67f7cf7993269982c66bd
 }
