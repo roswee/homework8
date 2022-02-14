@@ -81,6 +81,9 @@ body {
   width: 346px;
 }
 
+.nav-list-item{
+  position: relative;
+}
 .nav-link,
 .nav-link:visited,
 .nav-contacts {
@@ -91,9 +94,40 @@ body {
   letter-spacing: 0.02em;
 }
 
+.nav-list-item > .link-active[href]{
+  color:var(--second-color);
+  position: relative;
+}
+
 .nav-link,
 .nav-link:visited {
   color: inherit;
+}
+
+
+.link-active::after {
+  position: absolute;
+  bottom: -32px;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--second-color);
+  
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: -32px;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+}
+
+.nav-link:hover::after{
+  background-color: var(--second-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contacts {
@@ -102,9 +136,15 @@ body {
   padding: 25px;
 }
 .nav-link:hover,
-.nav-contacts:hover {
+.nav-contacts:hover
+{
   color: var(--second-color);
   fill: var(--second-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+svg{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -120,6 +160,75 @@ body {
 }
 
 /* Main site - main objects */
+ /* modal window */
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  /* animation-name: modal-window-anime;
+  animation-duration: 2s;
+  animation-timing-function: linear; */
+  transition: opacity;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 1s;
+}
+
+.modal-window2 > .icon {
+  z-index: 3;
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  padding: 9px;
+  position:absolute;
+  margin:0;
+  top: 8px;
+  right: 8px;
+
+
+}
+
+
+.modal-window2 > .icon:hover{
+  cursor: pointer;
+}
+
+.modal-window2 {
+  position: relative;
+  height: 528px;
+  width: 581px;
+}
+
+.modal-window {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 528px;
+  width: 581px;
+  background-color: #ffffff;
+  z-index: 2;
+  border-radius: 4px;
+
+  ;
+}
+
+.is-hidden {
+  visibility:hidden;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+/* main header */
 
 .main {
   display: flex;
@@ -222,14 +331,32 @@ h2 {
 .job-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-top: -94px;
   list-style: none;
 }
 .job-item {
   margin-top: 94px;
   margin-left: 15px;
   flex-basis: calc(100% / 3 - 15px);
+  position:relative;
+  height: 294px;
+  width: 370px;
+}
+
+.job-description {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: inherit;
+  margin: 0 auto;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  text-transform: uppercase;
+
+  ;
+
 }
 
 /* SECTION TEAM */
@@ -288,9 +415,11 @@ h2 {
   text-decoration: none;
 }
 
-.team-social-link:hover {
+.team-social-link:hover,
+.team-social-link:focus {
   fill: #ffffff;
   background-color: var(--second-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-box {
@@ -321,9 +450,11 @@ h2 {
   fill: #afb1b8;
 }
 
-.client-img:hover {
+.client-img:hover,
+.client-img:focus {
   border-color: var(--second-color);
   fill: var(--second-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-svg {
@@ -365,6 +496,7 @@ address {
 }
 .footer-link:hover {
   color: var(--second-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -404,6 +536,7 @@ address {
 
 .ftr-social-link:hover {
   background-color: var(--second-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* portfolio - menu */
@@ -431,6 +564,9 @@ address {
   color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-property: background-color color box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* portfolio items */
@@ -442,12 +578,12 @@ address {
   margin: -15px;
 }
 
-figcaption.porfolio-items-name {
+h4.porfolio-items-name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-figcaption {
+.portfolio-items-cap {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -459,12 +595,47 @@ figcaption {
   border: 1px solid #eeeeee;
   margin: 15px;
   flex-basis: calc(100% / 3 - 30px);
+  
+}
+.porfolio-items-box {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
 }
 
 .porfolio-items:hover {
   border: 1px solid rgba(238, 238, 238, 1);
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12); 
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.porfolio-items-box:hover .portfolio-item-hover {
+  transform: translateY(0);
+}
+
+
+.portfolio-item-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  background-color:rgba(33, 150, 243, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.33;
+  padding-left: 24px;
+  transform: translatey(101%);
+  transition: transform 250ms ease;
+  overflow: hidden;
 }
 
 .portfolio-items-cap {
@@ -482,4 +653,39 @@ a.porfolio-link {
 
 h4 {
   color: black;
+}
+
+@keyframes modal-window-anime {
+  0% {
+    opacity: 0;
+    cursor:progress;
+  }
+
+  25% {
+    opacity: .2;
+    background-color: beige;
+  
+
+  }
+
+  35% {
+    opacity: .3;
+    background-color: burlywood;
+  }
+
+  50% {
+    opacity: .6;
+    background-color: chocolate;
+  }
+
+  75% {
+    opacity: .85;
+    background-color: darkslategray;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+  
 }
