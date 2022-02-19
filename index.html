@@ -15,13 +15,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Zadanie domowe #5</title>
+    <title>Zadanie domowe #6</title>
   </head>
   <body>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal-window2">
-         <svg class="icon" width="11px" height="11px" data-modal-close><use href="images/icons.svg#icon-vector"></use></svg>
+         <svg class="icon" width="11px" height="11px" data-modal-close><use href="images/icons.svg#icon-Vector"></use></svg>
+         <form name="modal-form"> <div class="modal-title">Zostaw swoje dane w formularzu poniżej</div>
+           <label for="name"> Imię
+             <div class="input-modal"><svg class="icon" width="12" height="12">
+              <use href="images/icons.svg#icon-name"></use>
+            </svg>  <input id="username" type="name" class="input-modal-input"></div></label>
+          <label for="phone"> Telefon
+            <div class="input-modal">
+              <svg class="icon" width="12" height="12"><use href="images/icons.svg#icon-phone-modal"></use></svg>
+              <input id="phone" type="phone" class="input-modal-input">
+            </div>
+          </label>
+          <label for="email"> Email
+            <div class="input-modal">
+              <svg class="icon" width="12" height="12"><use href="images/icons.svg#icon-mail-modal"></use></svg>
+              <input id="email" type="email" name="email" class="input-modal-input"></div></label>
+          <label for="comment">Komentarz
+             <textarea id="comment" name="comment" rows="5" placeholder="Wprowadź tekst" class="input-modal"></textarea>
+          </label>
+          <label for="user-policy" class="user-policy"> <input type="checkbox" id="user-policy"><div class="user-policy-text">Oświadczam iż akceptuję  <a href="#" class="user-policy-link">Regulamin</a> i  <a href="#" class="user-policy-link">Politykę Prywatności</a>.</div></label>
+            <div class="modal-btn-div">
+            <button type="submit" class="modal-btn">Wyślij</button>
+            </div>
+         </form>
        </div>
      </div>
     </div>
@@ -512,6 +535,11 @@
               </a></li>
             </ul>
         </div>
+        <form name="newsletter-singup">
+          <label for="newsletter-email"> Zapisz się do newslettera 
+            <input id="newsletter-email" type="email" name="email" placeholder="E-mail"> <button class="newsletter-btn" type="submit">Zapisz się <svg class="newsletter-icon"><use href="images/icons.svg#newsletter"></use></svg></button>
+          </label>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
