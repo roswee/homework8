@@ -270,6 +270,7 @@ form[name="modal-form"] > label {
 #comment:focus {
   border-color: var(--second-color);
   fill: var(--second-color);
+  outline: var(--second-color);
 }
 
 
@@ -281,6 +282,8 @@ form[name="modal-form"] > label {
   resize: none;
   padding: 12px;
 }
+
+
 
 .modal-btn {
   width: 200px;
