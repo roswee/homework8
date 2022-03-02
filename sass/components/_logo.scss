@@ -1,0 +1,20 @@
+.logo__color,
+.logo__color:visited,
+.logo__color:hover {
+  color: var(--second-color);
+}
+
+.logo,
+.logo:visited,
+.logo:hover {
+  font-family: var(--second-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.logo__studio--footer {
+    color: white;
+  }
