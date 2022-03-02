@@ -35,7 +35,7 @@
     color: inherit;
   }
   
-  .nav__link::after, {
+  .nav__link::after {
     position: absolute;
     bottom: -32px;
     content: "";
