@@ -1,31 +1,20 @@
-form[name="newsletter-singup"] {
+.newsletter {
     white-space: pre;
     margin-top: 30px;
-  }
-  
-  label[for="newsletter-email"] {
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  #newsletter-email {
-    margin-top: 20px;
-    height: 50px;
-    width: 358px;
-    background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 15px;
-    border-radius: 4px;
-    color: white;
-  }
-  
-  .newsletter-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .newsletter-btn {
-      display: inline-flex;
+    &__label {
+      color: white;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    &__input {
+      margin-top: 20px;
+      height: 50px;
+      width: 358px;
+      background-color: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 15px;
+      border-radius: 4px;
+      color: white;
+    }
   }

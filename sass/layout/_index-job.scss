@@ -1,18 +1,16 @@
-.job-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-  .job-item {
+.job {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  &__item {
     margin-top: 94px;
     margin-left: 15px;
     flex-basis: calc(100% / 3 - 15px);
-    position:relative;
+    position: relative;
     height: 294px;
     width: 370px;
   }
-  
-  .job-description {
+  &__description {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -25,4 +23,4 @@
     color: #ffffff;
     text-transform: uppercase;
   }
-  
+}

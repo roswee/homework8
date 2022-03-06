@@ -301,7 +301,7 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container footer-div">
+      <div class="container footer__div">
         <div class="address">
         <a class="logo" rel="home" href="index.html">
           <span class="logo__color">Web</span><span class="logo__studio--footer">Studio</span></a>
@@ -311,13 +311,12 @@
             <a class="footer-link" href="tel:+48111111111">+48 111 111 111</a>
             </address>
         </div>
-        <div class="social-footer">
+        <div class="ftr-social">
             Dołącz do nas
             <ul>
-                <li class="ftr-social-list">
-            <a class="ftr-social-link" href="https://www.instagram.com">
+                <li class="ftr-social__list">
+            <a class="ftr-social__link" href="https://www.instagram.com">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -325,9 +324,8 @@
                   height="20px"></use>
                 </svg>
               </a></li>
-              <li class="ftr-social-list"><a class="ftr-social-link" href="https://www.twitter.com">
+              <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.twitter.com">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -335,9 +333,8 @@
                   height="20px"></use>
                 </svg>
               </a></li>
-              <li class="ftr-social-list"><a class="ftr-social-link" href="https://www.facebook.com/">
+              <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.facebook.com/">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -345,9 +342,8 @@
                   height="20px"></use>
                 </svg>
               </a></li>
-              <li class="ftr-social-list"><a class="ftr-social-link" href="https://www.linkedin.com">
+              <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.linkedin.com">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -357,9 +353,9 @@
               </a></li>
             </ul>
         </div>
-        <form name="newsletter-singup">
-          <label for="newsletter-email"> Zapisz się do newslettera 
-            <input id="newsletter-email" type="email" name="email" placeholder="E-mail"> <button class="btn newsletter-btn" type="submit">Zapisz się <svg class="newsletter-icon"><use href="images/icons.svg#icon-newsletter"></use></svg></button>
+        <form name="newsletter-singup" class="newsletter">
+          <label for="newsletter-email" class="newsletter__label"> Zapisz się do newslettera 
+            <input id="newsletter-email" class="newsletter__input" type="email" name="email" placeholder="E-mail"> <button class="btn btn--newsletter" type="submit">Zapisz się <svg class="icon--newsletter"><use href="images/icons.svg#icon-newsletter"></use></svg></button>
           </label>
         </form>
       </div>

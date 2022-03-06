@@ -1,69 +1,60 @@
-
-.team-list {
+.team {
+  background-color: var(--second-background-color);
+  &__list {
     display: inline-flex;
     justify-content: space-between;
     list-style: none;
   }
-  
-  .team {
-    background-color: var(--second-background-color);
-  }
-  
-  .team-item {
+  &__item {
     margin: 15px;
   }
-  
-  .team-member > img {
+}
+.member {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &_jpg {
     align-self: flex-start;
   }
-  .team-member {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  
-  .team-member-name {
+  &__name {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.17em;
   }
-  
-  .team-member-about {
+  &__about {
     box-sizing: border-box;
     text-align: center;
     padding: 0 0 30px 0;
     display: inline-flexbox;
   }
-  
-  .team-member-about-text {
+  &__description {
     color: var(--third-color);
   }
-  
-  .team-social-link {
+}
+.team-social {
+  box-sizing: border-box;
+  justify-content: space-around;
+  display: flex;
+  padding: 16px 10px 0 10px;
+  &__link {
     padding: 12px;
-    border-radius: 50%;
     fill: #afb1b8;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    &:hover,
+    &:focus {
+      fill: #ffffff;
+      background-color: var(--second-color);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}}
+  &__icon {
+    width: 20px;
+    height: 20px;
   }
-  
-  .team-social-link:hover,
-  .team-social-link:focus {
-    fill: #ffffff;
-    background-color: var(--second-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .team-social-box {
-    box-sizing: border-box;
-    justify-content: space-around;
-    display: flex;
-    padding: 16px 10px 0 10px;
-  }
-  
+}
