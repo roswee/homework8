@@ -84,7 +84,7 @@
     width: 448px;
   }
 }
-.user-policy__text {
+.user-policy {
   font-size: 14px;
   letter-spacing: 0.03rem;
   color: #757575;
@@ -107,19 +107,17 @@
 }
 .user-policy__checkbox {
   visibility: hidden;
-  &:checked + .user-policy__text::before {
+}
+.user-policy__checkbox:checked + .user-policy::before {
   background-color: var(--second-color);
   border: none;
-  background-image: url("../../images/checked.svg");
+  background-image: url(../../images/checked.svg);
   background-position: center;
   background-size: 10px;
   background-repeat: no-repeat;
   padding: 4px;
   box-shadow: none;
 }
-}
-
-
 .user-policy__link {
   color: var(--second-color);
   display: inline-block;
