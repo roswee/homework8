@@ -76,6 +76,10 @@ h3 {
   padding-bottom: 10px;
 }
 
+h4 {
+  color: black;
+}
+
 .container {
   width: 1200px;
   align-items: center;
@@ -107,21 +111,21 @@ h3 {
   max-width: 1600px;
 }
 
-.logo__color,
-.logo__color:visited,
-.logo__color:hover {
-  color: var(--second-color);
-}
-
-.logo,
-.logo:visited,
-.logo:hover {
+.logo, .logo:hover, .logo:visited {
   font-family: var(--second-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
   text-decoration: none;
   color: var(--first-color);
+}
+
+.logo__color {
+  color: var(--second-color);
+}
+
+.logo__color:visited, .logo__color:hover {
+  color: var(--second-color);
 }
 
 .logo__studio--footer {
@@ -155,32 +159,7 @@ h3 {
   transition-duration: 1s;
 }
 
-.modal-window2 > .icon {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  border-color: rgba(0, 0, 0, 0.1);
-  border-width: 1px;
-  border-style: solid;
-  padding: 10px;
-  position: absolute;
-  margin: 0;
-  top: -32px;
-  right: 8px;
-  fill: #000;
-}
-
-.modal-window2 > .icon:hover {
-  cursor: pointer;
-}
-
-.modal-window2 {
-  position: relative;
-  height: 581px;
-  width: 528px;
-}
-
-.modal-window {
+.modal {
   box-sizing: border-box;
   position: absolute;
   top: 50%;
@@ -190,6 +169,12 @@ h3 {
   width: 528px;
   background-color: #ffffff;
   border-radius: 4px;
+}
+
+.modal-window {
+  position: relative;
+  height: 581px;
+  width: 528px;
 }
 
 .modal__form {
@@ -209,12 +194,6 @@ h3 {
   text-align: center;
 }
 
-#name {
-  display: inline-block;
-  background-image: url("/images/icons.svg#name");
-  background-size: cover;
-}
-
 .modal__input {
   padding: 12px 12px 12px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -225,9 +204,7 @@ h3 {
   margin: 5px;
 }
 
-.modal__input2,
-.modal__input2:focus,
-.modal__input2:focus-within {
+.modal__input2, .modal__input2:focus, .modal__input2:focus-within {
   border: none;
   outline: none;
   box-shadow: none;
@@ -235,16 +212,13 @@ h3 {
   width: calc(100% - 30px);
 }
 
-.modal__input:hover,
-.modal__input:focus,
-#comment:hover,
-#comment:focus {
+.modal__input:hover, .modal__input:focus, .modal__comment:hover, .modal__comment:focus {
   border-color: var(--second-color);
   fill: var(--second-color);
   outline: var(--second-color);
 }
 
-#comment {
+.modal__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -285,7 +259,7 @@ h3 {
 .user-policy__checkbox:checked + .user-policy__text::before {
   background-color: var(--second-color);
   border: none;
-  background-image: url(../images/checked.svg);
+  background-image: url(../../images/checked.svg);
   background-position: center;
   background-size: 10px;
   background-repeat: no-repeat;
@@ -300,7 +274,7 @@ h3 {
 .user-policy__link {
   color: var(--second-color);
   display: inline-block;
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 
 .nav {
@@ -747,5 +721,28 @@ h4.porfolio-items-name {
 
 a.porfolio-link {
   text-decoration: none;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon--close_modal {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  position: absolute;
+  margin: 0;
+  top: -32px;
+  right: 8px;
+  fill: #000;
+}
+
+.icon--close_modal:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,20 +1,23 @@
-.logo__color,
-.logo__color:visited,
-.logo__color:hover {
-  color: var(--second-color);
+.logo {
+  &,
+  &:hover,
+  &:visited {
+    font-family: var(--second-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    text-decoration: none;
+    color: var(--first-color);
+  }
 }
-
-.logo,
-.logo:visited,
-.logo:hover {
-  font-family: var(--second-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  text-decoration: none;
-  color: var(--first-color);
+.logo__color {
+  color: var(--second-color);
+  &:visited,
+  &:hover {
+    color: var(--second-color);
+  }
 }
 
 .logo__studio--footer {
-    color: white;
-  }
+  color: white;
+}

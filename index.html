@@ -14,15 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Zadanie domowe #7</title>
   </head>
   <body>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal-window">
-        <div class="modal-window2">
-         <svg class="icon" width="11px" height="11px" data-modal-close><use href="images/icons.svg#icon-Vector"></use></svg>
+      <div class="modal">
+        <div class="modal-window">
+         <svg class="icon icon--close_modal" width="11px" height="11px" data-modal-close><use href="images/icons.svg#icon-Vector"></use></svg>
          <form name="modal-form" class="modal__form"> <div class="modal__title">Zostaw swoje dane w formularzu poniżej</div>
            <label for="name" class="modal__label"> Imię
              <div class="modal__input"><svg class="icon" width="12" height="12">
@@ -39,7 +38,7 @@
               <svg class="icon" width="12" height="12"><use href="images/icons.svg#icon-mail-modal"></use></svg>
               <input id="email" type="email" name="email" class="modal__input2"></div></label>
           <label for="comment" class="modal__label">Komentarz
-             <textarea id="comment" name="comment" rows="5" placeholder="Wprowadź tekst" class="modal__input"></textarea>
+             <textarea id="comment" class="modal__comment" name="comment" rows="5" placeholder="Wprowadź tekst" class="modal__input"></textarea>
           </label>
           <label for="user-policy" class="user-policy modal__form"> <input type="checkbox" class="user-policy__checkbox"><div class="user-policy__text">Oświadczam iż akceptuję  <a href="#" class="user-policy__link">Regulamin</a> i  <a href="#" class="user-policy__link">Politykę Prywatności</a>.</div></label>
             <div class="modal-btn__div">

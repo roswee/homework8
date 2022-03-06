@@ -1,3 +1,22 @@
 .icon {
     margin-right: 10px;
+
+    &--close_modal{
+      width: 30px;
+      height: 30px;;
+        border-radius: 50%;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-width: 1px;
+        border-style: solid;
+        padding: 10px;
+        position: absolute;
+        margin:0;
+        top: -32px;
+        right: 8px;
+        fill:#000;
+        
+        &:hover{
+          cursor: pointer;
+        }
+    }
   }
