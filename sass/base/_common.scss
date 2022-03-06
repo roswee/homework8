@@ -1,0 +1,67 @@
+:root {
+  --main-font: "Roboto", serif;
+  --second-font: "Raleway", serif;
+  --first-color: #212121;
+  --second-color: #2196f3;
+  --third-color: #757575;
+  --background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+}
+
+* ::after ::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 136%;
+  padding: 200px auto;
+  letter-spacing: 0.06em;
+}
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+h3 {
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+h4 {
+  color: black;
+}
