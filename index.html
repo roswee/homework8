@@ -84,64 +84,63 @@
     </header>
     <main>
       <!-- MAIN -->
-
       <section class="section main">
-        <div class="container">
+        <div class="container headline">
           <h1>
             Efektywne rozwiązania
             dla Waszego biznesu
-          </h1>
-          <button type="button" class="btn" data-modal-open>Zamów usługę</button>
+         </h1>
+         <button type="button" class="btn" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <!-- SECTION WITH FEATURES -->
       <div class="container">
         <section class="section">
           <ul class="feature">
-            <li class="feature-item">
-              <div class="feature-icon-box">
-                <svg class="feature-icon" height="70px">
+            <li class="feature__item">
+              <div class="feature__box">
+                <svg class="feature__icon" height="70px">
                   <use href="images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3>Lorem ipsum</h3>
-              <p class="feature-description">
+              <p class="feature__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="feature-item">
-              <div class="feature-icon-box">
-                <svg class="feature-icon" height="70px">
+            <li class="feature__item">
+              <div class="feature__box">
+                <svg class="feature__icon" height="70px">
                   <use href="images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3>Lorem ipsum</h3>
-              <p class="feature-description">
+              <p class="feature__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="feature-item">
-              <div class="feature-icon-box">
-                <svg class="feature-icon" height="70px">
+            <li class="feature__item">
+              <div class="feature__box">
+                <svg class="feature__icon" height="70px">
                   <use href="images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3>Lorem ipsum</h3>
-              <p class="feature-description">
+              <p class="feature__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="feature-item">
-              <div class="feature-icon-box">
-                <svg class="feature-icon" height="70px">
+            <li class="feature__item">
+              <div class="feature__box">
+                <svg class="feature__icon" height="70px">
                   <use href="images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3>Lorem ipsum</h3>
-              <p class="feature-description">
+              <p class="feature__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -153,33 +152,33 @@
       <div class="container">
         <section class="section">
           <h2>Czym się zajmujemy</h2>
-          <ul class="job-list">
-            <li class="job-item">
+          <ul class="job">
+            <li class="job__item">
               <img
                 src="images/photo1.jpg"
                 alt="tablet woth wireless keyboard"
                 width="370"
                 height="294"
               />
-              <div class="job-description">Aplikacje komputerowe</div>
+              <div class="job__description">Aplikacje komputerowe</div>
             </li>
-            <li class="job-item">
+            <li class="job__item">
               <img
                 src="images/photo2.jpg"
                 alt="Smartphone with computer in background"
                 width="370"
                 height="294"
               />
-              <div class="job-description">Aplikacje mobilne</div>
+              <div class="job__description">Aplikacje mobilne</div>
             </li>
-            <li class="job-item">
+            <li class="job__item">
               <img
                 src="images/photo3.jpg"
                 alt="tablet with color palette"
                 width="370"
                 height="294"
               />
-              <p class="job-description">Rozwiązania graficzne</p>
+              <p class="job__description">Rozwiązania graficzne</p>
             </li>
           </ul>
         </section>
@@ -189,225 +188,160 @@
         <div class="container">
           <section class="section">
             <h2>Nasz zespół</h2>
-            <ul class="team-list">
-              <li class="team-item">
-                <figure class="team-member">
+            <ul class="team__list">
+              <li class="team__item">
+                <figure class="member">
                   <img
+                    class="member_jpg"
                     src="images/photo4.jpg"
                     alt="Mr number 1, Product Designer"
                     width="270"
                     height="260"
                   />
-                  <figcaption class="team-member-about">
-                    <span class="team-member-name">John Doe</span></br>
-                    <span class="team-member-about-text">Product Designer</span>
-                    <div class="team-social-box">
-                      <a class="team-social-link" href="https://www.instagram.com">
-                        <svg
-                          class="team-social-icon"
-                          width="20px"
-                          height="20px"
-                        >
-                          <use href="images/icons.svg#icon-instagram" width="20px"
-                          height="20px"></use>
-                        </svg>
+                  <figcaption class="member__about">
+                    <span class="member__name">John Doe</span></br>
+                    <span class="member__description">Product Designer</span>
+                    <div class="team-social">
+                      <a class="team-social__link" href="https://www.instagram.com">
+                        <svg class="team-social__icon"><use href="images/icons.svg#icon-instagram"></use></svg>
                       </a>
-                      <a class="team-social-link" href="https://www.twitter.com">
-                        <svg
-                          class="team-social-icon"
-                          width="20px"
-                          height="20px"
-                        >
-                          <use href="images/icons.svg#icon-twitter" width="20px"
-                          height="20px"></use>
-                        </svg>
+                      <a class="team-social__link" href="https://www.twitter.com"><svg class="team-social__icon"><use href="images/icons.svg#icon-twitter"></use></svg>
                       </a>
-                      <a class="team-social-link" href="https://www.facebook.com/">
-                        <svg
-                          class="team-social-icon"
-                          width="20px"
-                          height="20px"
-                        >
-                          <use href="images/icons.svg#icon-facebook" width="20px"
-                          height="20px"></use>
-                        </svg>
+                      <a class="team-social__link" href="https://www.facebook.com/">
+                        <svg class="team-social__icon"><use href="images/icons.svg#icon-facebook"></use></svg>
                       </a>
-                      <a class="team-social-link" href="https://www.linkedin.com">
-                        <svg
-                          class="team-social-icon"
-                          width="20px"
-                          height="20px"
-                        >
-                          <use href="images/icons.svg#icon-linkedin" width="20px"
-                          height="20px"></use>
-                        </svg>
+                      <a class="team-social__link" href="https://www.linkedin.com">
+                        <svg class="team-social__icon"><use href="images/icons.svg#icon-linkedin"></use></svg>
                       </a>
                     </div>
                   </figcaption>
                 </figure>
               </li>
-              <li class="team-item">
-                <figure class="team-member">
+              <li class="team__item">
+                <figure class="member">
                   <img
+                  class="member_jpg"
                     src="images/photo5.jpg"
                     alt="the only one women in management, Frontend Developer"
                     width="270"
                     height="260"
                   />
-                  <figcaption class="team-member-about">
-                    <span class="team-member-name">John Doe</span></br>
-                    <span class="team-member-about-text">Frontend Developer</span>
-                    <div class="team-social-box">
-                        <a class="team-social-link" href="https://www.instagram.com">
+                  <figcaption class="member__about">
+                    <span class="member__name">John Doe</span></br>
+                    <span class="member__description">Frontend Developer</span>
+                    <div class="team-social">
+                        <a class="team-social__link" href="https://www.instagram.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-instagram" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-instagram"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.twitter.com">
+                        <a class="team-social__link" href="https://www.twitter.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-twitter" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-twitter"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.facebook.com/">
+                        <a class="team-social__link" href="https://www.facebook.com/">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-facebook" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-facebook"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.linkedin.com">
+                        <a class="team-social__link" href="https://www.linkedin.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
-                          >
-                            <use href="images/icons.svg#icon-linkedin" width="20px"
-                            height="20px"></use>
+                            class="team-social__icon">
+                            <use href="images/icons.svg#icon-linkedin"></use>
                           </svg>
                         </a>
                       </div>
                   </figcaption>
                 </figure>
               </li>
-              <li class="team-item">
-                <figure class="team-member">
+              <li class="team__item">
+                <figure class="member">
                   <img
+                  class="member_jpg"
                     src="images/photo6.jpg"
                     alt="Mr nr 2, Marketing"
                     width="270"
                     height="260"
                   />
-                  <figcaption class="team-member-about">
-                    <span class="team-member-name">John Doe</span></br>
-                    <span class="team-member-about-text">Marketing</span>
-                    <div class="team-social-box">
-                        <a class="team-social-link" href="https://www.instagram.com">
+                  <figcaption class="member__about">
+                    <span class="member__name">John Doe</span></br>
+                    <span class="member__description">Marketing</span>
+                    <div class="team-social">
+                        <a class="team-social__link" href="https://www.instagram.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
-                          >
-                            <use href="images/icons.svg#icon-instagram" width="20px"
-                            height="20px"></use>
+                            class="team-social__icon">
+                            <use href="images/icons.svg#icon-instagram"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.twitter.com">
+                        <a class="team-social__link" href="https://www.twitter.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
-                          >
-                            <use href="images/icons.svg#icon-twitter" width="20px"
-                            height="20px"></use>
+                            class="team-social__icon">
+                            <use href="images/icons.svg#icon-twitter"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.facebook.com/">
+                        <a class="team-social__link" href="https://www.facebook.com/">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
-                          >
-                            <use href="images/icons.svg#icon-facebook" width="20px"
-                            height="20px"></use>
+                            class="team-social__icon">
+                            <use href="images/icons.svg#icon-facebook"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.linkedin.com">
+                        <a class="team-social__link" href="https://www.linkedin.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-linkedin" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-linkedin"></use>
                           </svg>
                         </a>
                       </div>
                   </figcaption>
                 </figure>
               </li>
-              <li class="team-item">
-                <figure class="team-member">
+              <li class="team__item">
+                <figure class="member">
                   <img
+                  class="member_jpg"
                     src="images/photo7.jpg"
                     alt="Mr nr 3, UI Designer"
                     width="270"
                     height="260"
                   />
-                  <figcaption class="team-member-about">
-                    <span class="team-member-name">John Doe</span></br>
-                    <span class="team-member-about-text">UI Designer</span>
-                    <div class="team-social-box">
-                        <a class="team-social-link" href="https://www.instagram.com">
+                  <figcaption class="member__about">
+                    <span class="member__name">John Doe</span></br>
+                    <span class="member__description">UI Designer</span>
+                    <div class="team-social">
+                        <a class="team-social__link" href="https://www.instagram.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-instagram" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-instagram"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.twitter.com">
+                        <a class="team-social__link" href="https://www.twitter.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-twitter" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-twitter"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.facebook.com/">
+                        <a class="team-social__link" href="https://www.facebook.com/">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-facebook" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-facebook"></use>
                           </svg>
                         </a>
-                        <a class="team-social-link" href="https://www.linkedin.com">
+                        <a class="team-social__link" href="https://www.linkedin.com">
                           <svg
-                            class="team-social-icon"
-                            width="20px"
-                            height="20px"
+                            class="team-social__icon"
                           >
-                            <use href="images/icons.svg#icon-linkedin" width="20px"
-                            height="20px"></use>
+                            <use href="images/icons.svg#icon-linkedin"></use>
                           </svg>
                         </a>
                       </div>
@@ -479,7 +413,7 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer-div">
+      <div class="container footer__div">
         <div class="address">
         <a class="logo" rel="home" href="index.html">
           <span class="logo__color">Web</span><span class="logo__studio--footer">Studio</span></a>
@@ -489,13 +423,12 @@
             <a class="footer-link" href="tel:+48111111111">+48 111 111 111</a>
             </address>
         </div>
-        <div class="social-footer">
+        <div class="ftr-social">
             Dołącz do nas
             <ul>
-                <li class="ftr-social-list">
-            <a class="ftr-social-link" href="https://www.instagram.com">
+                <li class="ftr-social__list">
+            <a class="ftr-social__link" href="https://www.instagram.com">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -503,9 +436,8 @@
                   height="20px"></use>
                 </svg>
               </a></li>
-              <li class="ftr-social-list"><a class="ftr-social-link" href="https://www.twitter.com">
+              <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.twitter.com">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -513,9 +445,8 @@
                   height="20px"></use>
                 </svg>
               </a></li>
-              <li class="ftr-social-list"><a class="ftr-social-link" href="https://www.facebook.com/">
+              <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.facebook.com/">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -523,9 +454,8 @@
                   height="20px"></use>
                 </svg>
               </a></li>
-              <li class="ftr-social-list"><a class="ftr-social-link" href="https://www.linkedin.com">
+              <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.linkedin.com">
                 <svg
-                  class="ftr-social-icon"
                   width="20px"
                   height="20px"
                 >
@@ -535,9 +465,9 @@
               </a></li>
             </ul>
         </div>
-        <form name="newsletter-singup">
-          <label for="newsletter-email"> Zapisz się do newslettera 
-            <input id="newsletter-email" type="email" name="email" placeholder="E-mail"> <button class="btn newsletter-btn" type="submit">Zapisz się <svg class="newsletter-icon"><use href="images/icons.svg#icon-newsletter"></use></svg></button>
+        <form name="newsletter-singup" class="newsletter">
+          <label for="newsletter-email" class="newsletter__label"> Zapisz się do newslettera 
+            <input id="newsletter-email" class="newsletter__input" type="email" name="email" placeholder="E-mail"> <button class="btn btn--newsletter" type="submit">Zapisz się <svg class="icon--newsletter"><use href="images/icons.svg#icon-newsletter"></use></svg></button>
           </label>
         </form>
       </div>

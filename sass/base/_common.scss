@@ -29,7 +29,6 @@ ol {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: var(--main-font);
   color: inherit;
@@ -40,12 +39,13 @@ ul {
 svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 h1 {
+  display: flex;
   font-size: 44px;
   line-height: 136%;
   padding: 200px auto;
   letter-spacing: 0.06em;
+  justify-content: center;
 }
 h2 {
   font-weight: bold;

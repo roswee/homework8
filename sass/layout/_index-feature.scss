@@ -1,24 +1,20 @@
 .feature {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-top: -94px;
-    list-style: none;
-  }
-  
-  .feature-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -94px;
+  list-style: none;
+  &__item {
     margin-top: 94px;
     margin-left: 15px;
     margin-right: 15px;
     flex-basis: calc(100% / 4 - 30px);
   }
-  
-  .feature-icon {
+  &__icon {
     fill: #212121;
   }
-  
-  .feature-icon-box {
+  &__box {
     display: flex;
     width: 270px;
     height: 120px;
@@ -26,11 +22,10 @@
     align-items: center;
     margin-bottom: 30px;
   }
-  
-  
-  .feature-description {
+  &__description {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--third-color);
   }
+}
