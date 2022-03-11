@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=WebStudio, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,18 +19,16 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="container">
+      <nav class="">
+        <div class="container nav">
           <a href="index.html" rel="home" class="logo">
-            <span class="logo__color">Web</span
-            ><span class="logo__studio--nav">Studio</span></a
-          >
+            <span class="logo__color">Web</span><span class="logo__studio--nav">Studio</span></a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__link">Agencja</a>
+              <a href="index.html" class="nav__link link__active">Agencja</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link__active">Portfolio</a>
+              <a href="./portfolio.html" class="nav__link">Porfolio</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Kontakt</a>
@@ -79,8 +77,10 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/technocrack.jpg"
+                      src="images/portfolio/technocrack370.jpg"
+                      srcset="images/portfolio/technocrack370@2.jpg x2"
                       alt="technocrack"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -100,10 +100,10 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/new orleanVSgolden star.jpg"
+                      src="images/portfolio/new orleanVSgolden star370.jpg"
+                      srcset="images/portfolio/new orleanVSgolden star370@2.jpg x2"
                       alt="Grafika New Orlean vs Golden Star"
-                      width="370px"
-                      height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -126,10 +126,10 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/seafood_restaurant.jpg"
+                      src="images/portfolio/seafood_restaurant370.jpg"
+                      srcset="images/portfolio/seafood_restaurant@2.jpg x2"
                       alt="Restauracja Seafood"
-                      width="370px"
-                      height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -150,10 +150,12 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/project prime.jpg"
+                      src="images/portfolio/project prime370.jpg"
+                      srcset="images/portfolio/project prime370@2.jpg x2"
                       alt="Projekt Prime"
                       width="370px"
                       height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -174,10 +176,12 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/project boxes.jpg"
+                      src="images/portfolio/project boxes370.jpg"
+                      srcset="images/portfolio/project boxes370@2.jpg x2"
                       alt="Projekt Boxes"
                       width="370px"
                       height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -198,10 +202,12 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/Inspiration has no Borders.jpg"
+                      src="images/portfolio/Inspiration has no Borders370.jpg"
+                      srcset="images/portfolio/Inspiration has no Borders370@2.jpg x2"
                       alt="Inspiracje nie mają granic"
                       width="370px"
                       height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -222,10 +228,12 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/limited ediction magazine.jpg"
+                      src="images/portfolio/limited ediction magazine370.jpg"
+                      srcset="images/portfolio/limited ediction magazine370@2.jpg x2"
                       alt="Magazyn Limited Edition"
                       width="370px"
                       height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -246,10 +254,12 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/lab project.jpg"
+                      src="images/portfolio/lab project370.jpg"
+                      srcset="images/portfolio/lab project370@2.jpg x2"
                       alt="Projekt lab"
                       width="370px"
                       height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -270,10 +280,12 @@
                 <figure class="portfolio__items">
                   <div class="portfolio__box">
                     <img
-                      src="images/portfolio/growing business.jpg"
+                      src="images/portfolio/growing business370.jpg"
+                      srcset="images/portfolio/growing business370@2.jpg x2"
                       alt="Growing business"
                       width="370px"
                       height="294px"
+                      class="portfolio__image"
                     />
                     <div class="portfolio__description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -296,25 +308,22 @@
     <footer class="footer">
       <div class="container footer__div">
         <div class="address">
-        <a class="logo" rel="home" href="index.html">
-          <span class="logo__color">Web</span><span class="logo__studio--footer">Studio</span></a>
+        <a class="logo logo--footer" rel="home" href="index.html">
+            <span class="logo__color">Web</span><span class="logo__studio--footer">Studio</span></a>
             <address class="address">
-            m. Warszawa, Aleje Jerozolimskie 21
-            <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
-            <a class="footer-link" href="tel:+48111111111">+48 111 111 111</a>
+              <ul class="address__list">
+                <li class="address_part">m. Warszawa, Aleje Jerozolimskie 21</li>
+                <li class="address_part"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="address_part"><a class="footer-link" href="tel:+48111111111">+48 111 111 111</a></li></ul>
             </address>
         </div>
         <div class="ftr-social">
             Dołącz do nas
             <ul>
-                <li class="ftr-social__list">
-            <a class="ftr-social__link" href="https://www.instagram.com">
-                <svg
-                  width="20px"
-                  height="20px"
-                >
-                  <use href="images/icons.svg#icon-instagram" width="20px"
-                  height="20px"></use>
+              <li class="ftr-social__list">
+              <a class="ftr-social__link" href="https://www.instagram.com">
+                <svg width="20px" height="20px">
+                  <use href="images/icons.svg#icon-instagram" width="20px" height="20px"></use>
                 </svg>
               </a></li>
               <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.twitter.com">
@@ -347,9 +356,11 @@
             </ul>
         </div>
         <form name="newsletter-singup" class="newsletter">
-          <label for="newsletter-email" class="newsletter__label"> Zapisz się do newslettera 
-            <input id="newsletter-email" class="newsletter__input" type="email" name="email" placeholder="E-mail"> <button class="btn btn--newsletter" type="submit">Zapisz się <svg class="icon--newsletter"><use href="images/icons.svg#icon-newsletter"></use></svg></button>
-          </label>
+          <label for="newsletter-email" class="newsletter__label"><ul class="newsletter__list"></ul>
+          <li class="newsletter__part"> Zapisz się do newslettera</li>
+          <li class="newsletter__part"><input id="newsletter-email" class="newsletter__input" type="email" name="email" placeholder="E-mail"></li>
+          <li class="newsletter__part newsletter__part--btn"><button class="btn btn--newsletter" type="submit">Zapisz się <svg class="icon--newsletter"><use href="images/icons.svg#icon-newsletter"></use></svg></button></li>
+          </ul></label>
         </form>
       </div>
     </footer>

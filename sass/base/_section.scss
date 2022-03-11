@@ -1,12 +1,4 @@
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-
-  .main {
-    display: flexbox;
+.main {
     justify-content: center;
     align-items: center;
     font-weight: 900;
@@ -15,7 +7,7 @@
     color: #ffffff;
     text-align: center;
     background: var(--background-color);
-    height: 600px;
+    height: 400px;
     background-image: linear-gradient(
         to left top,
         rgba(47, 48, 58, 0.4),
@@ -23,6 +15,46 @@
       url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 1600px;
+    background-size: cover;
+    max-width: 100%;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main {
+    background-image:  linear-gradient(
+      to left top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4) ),
+      url(/images/background@2.jpg);
+  }
+}
+
+  
+@media screen and (min-width: 768px) {
+  .main { max-width: 768px}
+
+  }
+
+@media screen and (min-width: 1200px) {
+  .main { max-width: 1600px;
+    height: 600px;
+  }
+    .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
     max-width: 1600px;
+    margin: 0 auto;
+  }
+  }
+
+  @media screen and (max-width: 1200px){
+  .no-mobile {
+    display: none;
+  }
+    
+  }
+
+  .section {
+    padding-top: 60px;
   }

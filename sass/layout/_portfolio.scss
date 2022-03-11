@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   margin: -15px;
   &__name {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
     letter-spacing: 0.06em;
   }
@@ -12,14 +12,14 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    padding: 20px 24px;
+    padding: 15px 24px;
     text-decoration: none;
     color: inherit;
   }
   &__items {
     border: 1px solid #eeeeee;
     margin: 15px;
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% - 60px);
     &:hover {
       border: 1px solid rgba(238, 238, 238, 1);
       box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -30,8 +30,8 @@
   }
   &__box {
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     overflow: hidden;
   }
   &__description {
@@ -67,4 +67,15 @@
 }
 .portfolio__box:hover .portfolio__description {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) and (max-width:1200px){
+ .portfolio__link {
+   width: 356px;
+ }
+ .portfolio__image {
+   width: 352px !important;
+ }
+
+
 }

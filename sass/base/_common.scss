@@ -41,11 +41,16 @@ svg {
 }
 h1 {
   display: flex;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 136%;
-  padding: 200px auto;
   letter-spacing: 0.06em;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 44px;
+  }
 }
 h2 {
   font-weight: bold;

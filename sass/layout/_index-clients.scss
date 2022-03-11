@@ -1,11 +1,12 @@
 .client-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 .client-img {
   box-sizing: border-box;
-  width: 170px;
   height: 92px;
+  width: calc(100vw / 2 - 47px);
   border-width: 1px;
   border-color: #afb1b8;
   border-style: solid;
@@ -27,4 +28,16 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px){
+  .client-img {
+    width: calc(100vw / 3 - 62px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-img {
+    width: 170px;
+  }
 }

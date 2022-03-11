@@ -1,20 +1,58 @@
 .newsletter {
-    white-space: pre;
-    margin-top: 30px;
+    white-space: pre-line;
+    margin-top: 60px;
+    justify-content: center;
     &__label {
       color: white;
       text-transform: uppercase;
       font-size: 14px;
       font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     &__input {
-      margin-top: 20px;
       height: 50px;
-      width: 358px;
+      width: 90vw;
       background-color: inherit;
       border: 1px solid rgba(255, 255, 255, 0.3);
       padding: 15px;
       border-radius: 4px;
       color: white;
+      margin: 10px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__part {
+      display: flex;
+      width: 500px;
+      justify-content: center;
     }
   }
+
+@media screen and (min-width: 768px){
+    .newsletter {
+      white-space: normal;
+      &__input {
+        width: 450px;
+      }
+      &__label {
+        width: 768px;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin-top: 0px;
+    &__part {
+      width: 358px;
+    }
+
+
+  }
+  
+}

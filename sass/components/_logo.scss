@@ -8,6 +8,7 @@
     line-height: 1.192;
     text-decoration: none;
     color: var(--first-color);
+    margin-bottom: 10px;
   }
 }
 .logo__color {
@@ -20,4 +21,9 @@
 
 .logo__studio--footer {
   color: white;
+}
+
+.logo--footer {
+  display: flex;
+  justify-content: center;
 }

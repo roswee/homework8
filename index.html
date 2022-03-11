@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=WebStudio, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Zadanie domowe #7</title>
+    <title>Zadanie domowe #8</title>
   </head>
   <body>
     <div class="backdrop is-hidden" data-modal>
@@ -37,10 +37,10 @@
             <div class="modal__input">
               <svg class="icon" width="12" height="12"><use href="images/icons.svg#icon-mail-modal"></use></svg>
               <input id="email" type="email" name="email" class="modal__input2"></div></label>
-          <label for="comment" class="modal__label">Komentarz
+          <label for="comment" class="modal__label">Komentarz <br>
              <textarea id="comment" class="modal__comment" name="comment" rows="5" placeholder="Wprowadź tekst" class="modal__input"></textarea>
           </label>
-          <label for="user-policy" class="modal__form" > <input type="checkbox" class="user-policy__checkbox"> <div class="user-policy">Oświadczam iż akceptuję  <a href="#" class="user-policy__link">Regulamin</a> i  <a href="#" class="user-policy__link">Politykę Prywatności</a>.</div></label>
+          <label for="user-policy" class="modal__form"><input type="checkbox" class="user-policy__checkbox"> <div class="user-policy">Oświadczam iż akceptuję  <a href="#" class="user-policy__link">Regulamin</a> i  <a href="#" class="user-policy__link">Politykę Prywatności</a>.</div></label>
             <div class="modal-btn__div">
             <button type="submit" class="btn">Wyślij</button>
             </div>
@@ -50,8 +50,8 @@
     </div>
     <!-- HEADER -->
     <header class="header">
-      <nav class="nav">
-        <div class="container">
+      <nav class="">
+        <div class="container nav">
           <a href="index.html" rel="home" class="logo">
             <span class="logo__color">Web</span><span class="logo__studio--nav">Studio</span></a>
           <ul class="nav__list">
@@ -90,7 +90,7 @@
             Efektywne rozwiązania
             dla Waszego biznesu
          </h1>
-         <button type="button" class="btn" data-modal-open>Zamów usługę</button>
+         <button type="button" class="btn" data-modal-open>Zamów usługę</button> 
         </div>
       </section>
       <!-- SECTION WITH FEATURES -->
@@ -150,7 +150,7 @@
       </div>
       <!-- SECTION ABOUT OUR JOB -->
       <div class="container">
-        <section class="section">
+        <section class="section no-mobile">
           <h2>Czym się zajmujemy</h2>
           <ul class="job">
             <li class="job__item">
@@ -415,25 +415,22 @@
     <footer class="footer">
       <div class="container footer__div">
         <div class="address">
-        <a class="logo" rel="home" href="index.html">
-          <span class="logo__color">Web</span><span class="logo__studio--footer">Studio</span></a>
+        <a class="logo logo--footer" rel="home" href="index.html">
+            <span class="logo__color">Web</span><span class="logo__studio--footer">Studio</span></a>
             <address class="address">
-            m. Warszawa, Aleje Jerozolimskie 21
-            <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
-            <a class="footer-link" href="tel:+48111111111">+48 111 111 111</a>
+              <ul class="address__list">
+                <li class="address_part">m. Warszawa, Aleje Jerozolimskie 21</li>
+                <li class="address_part"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="address_part"><a class="footer-link" href="tel:+48111111111">+48 111 111 111</a></li></ul>
             </address>
         </div>
         <div class="ftr-social">
             Dołącz do nas
             <ul>
-                <li class="ftr-social__list">
-            <a class="ftr-social__link" href="https://www.instagram.com">
-                <svg
-                  width="20px"
-                  height="20px"
-                >
-                  <use href="images/icons.svg#icon-instagram" width="20px"
-                  height="20px"></use>
+              <li class="ftr-social__list">
+              <a class="ftr-social__link" href="https://www.instagram.com">
+                <svg width="20px" height="20px">
+                  <use href="images/icons.svg#icon-instagram" width="20px" height="20px"></use>
                 </svg>
               </a></li>
               <li class="ftr-social__list"><a class="ftr-social__link" href="https://www.twitter.com">
