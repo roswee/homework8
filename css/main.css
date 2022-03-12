@@ -210,6 +210,7 @@ h4 {
 
 .btn--newsletter {
   display: flex;
+  margin: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -393,6 +394,12 @@ h4 {
   margin: 10px;
 }
 
+.newsletter-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .newsletter__input {
     width: 450px;
@@ -414,6 +421,10 @@ h4 {
     display: unset;
     white-space: pre-line;
     flex-direction: unset;
+  }
+  .newsletter-div {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -878,6 +889,7 @@ h4 {
 .footer {
   background-color: var(--background-color);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link {
@@ -912,7 +924,7 @@ h4 {
 .address__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .address__part {
@@ -944,6 +956,13 @@ h4 {
   .ftr-social {
     width: max-content;
     flex-wrap: nowrap;
+  }
+  .address {
+    justify-content: left;
+    align-items: flex-start;
+  }
+  .address__list {
+    align-items: flex-start;
   }
 }
 

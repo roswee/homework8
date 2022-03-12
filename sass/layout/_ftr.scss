@@ -36,6 +36,7 @@
 .footer {
   background-color: var(--background-color);
   padding-top: 60px;
+  padding-bottom: 60px;
   &-link {
     display: block;
     text-decoration: none;
@@ -65,7 +66,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   &__part {
     display: flex;
@@ -98,5 +99,12 @@
   .ftr-social {
     width: max-content;
     flex-wrap: nowrap;
+  }
+  .address {
+    justify-content: left;
+    align-items: flex-start;
+    &__list {
+      align-items: flex-start;
+    }
   }
 }
