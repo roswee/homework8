@@ -1,5 +1,6 @@
 @import "./utils/_visually-hidden";
 @import "./utils/variables";
+@import "./components/mobile-menu";
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
@@ -16,4 +17,3 @@
 @import "./layout/index-clients";
 @import "./layout/ftr";
 @import "./layout/_portfolio";
-@import "./components/mobile-menu";

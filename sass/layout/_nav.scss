@@ -33,7 +33,9 @@
     margin: 0;
     padding: 0;
   }
-
+  .deskop-hidden {
+    display: none;
+    }
   }
     
   @media screen and (min-width:1200px) {
@@ -52,6 +54,9 @@
       padding-left: 25px;
       max-width:none;
     }}
+    .deskop-hidden {
+      display: none;
+      }
   }
 
 
