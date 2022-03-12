@@ -20,6 +20,37 @@
   <body>
     <header class="header">
       <nav class="">
+        <div class="mobile-menu is-hidden" mobile-menu>
+          <svg class="icon icon--close_mobile" width="18px" height="18px" mobile-menu-close><use href="images/icons.svg#icon-Vector"></use></svg>
+            <div class="mobile-nav">
+              <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                  <a href="index.html" class="mobile-nav__link">Agencja</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="./portfolio.html" class="mobile-nav__link">Porfolio</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#" class="mobile-nav__link">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-down">
+            <div class="mobile-address">
+              <ul>
+                <li class="mobile-address__phone">+48 111 111 111</li>
+                <li class="mobile-address__email">info@devstudio.com</li>
+              </ul>
+            </div>
+            <div class="mobile-social">
+              <ul class="mobile-social__list">
+                <li class="mobile-social__link">Instagram</li>
+                <li class="mobile-social__link">Twitter</li>
+                <li class="mobile-social__link">Facebook</li>
+                <li class="mobile-social__link">Linkedin</li>
+              </ul>
+            </div></div>
+        </div>
         <div class="container nav">
           <a href="index.html" rel="home" class="logo">
             <span class="logo__color">Web</span><span class="logo__studio--nav">Studio</span></a>
@@ -47,6 +78,13 @@
               </svg>
               +48 111 111 111</a
             >
+          </div>
+          <div class="deskop-hidden">
+            <button class="menu-bars" type="button" mobile-menu-open>
+              <span class="menu-bars__span"></span>
+              <span class="menu-bars__span"></span>
+              <span class="menu-bars__span"></span>
+            </button>
           </div>
         </div>
       </nav>
