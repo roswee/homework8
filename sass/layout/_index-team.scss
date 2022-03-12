@@ -32,7 +32,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   &_jpg {
-    align-self:center;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 460px;
   }
   &__name {
     font-size: 16px;
@@ -72,5 +75,14 @@
   &__icon {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .member_jpg {
+    display: block;
+    object-fit: cover;
+    width: 270px;
+    height: 260px;
   }
 }

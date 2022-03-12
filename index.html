@@ -51,6 +51,37 @@
     <!-- HEADER -->
     <header class="header">
       <nav class="">
+        <div class="mobile-menu is-hidden" mobile-menu>
+          <svg class="icon icon--close_mobile" width="18px" height="18px" mobile-menu-close><use href="images/icons.svg#icon-Vector"></use></svg>
+            <div class="mobile-nav">
+              <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                  <a href="index.html" class="mobile-nav__link">Agencja</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="./portfolio.html" class="mobile-nav__link">Porfolio</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#" class="mobile-nav__link">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-down">
+            <div class="mobile-address">
+              <ul>
+                <li class="mobile-address__phone">+48 111 111 111</li>
+                <li class="mobile-address__email">info@devstudio.com</li>
+              </ul>
+            </div>
+            <div class="mobile-social">
+              <ul class="mobile-social__list">
+                <li class="mobile-social__link">Instagram</li>
+                <li class="mobile-social__link">Twitter</li>
+                <li class="mobile-social__link">Facebook</li>
+                <li class="mobile-social__link">Linkedin</li>
+              </ul>
+            </div></div>
+        </div>
         <div class="container nav">
           <a href="index.html" rel="home" class="logo">
             <span class="logo__color">Web</span><span class="logo__studio--nav">Studio</span></a>
@@ -78,6 +109,13 @@
               </svg>
               +48 111 111 111</a
             >
+          </div>
+          <div class="deskop-hidden">
+            <button class="menu-bars" type="button" mobile-menu-open>
+              <span class="menu-bars__span"></span>
+              <span class="menu-bars__span"></span>
+              <span class="menu-bars__span"></span>
+            </button>
           </div>
         </div>
       </nav>
@@ -191,13 +229,18 @@
             <ul class="team__list">
               <li class="team__item">
                 <figure class="member">
-                  <img
-                    class="member_jpg"
-                    src="images/photo4.jpg"
+                  <picture><source
+                    srcset="./images/photo4.jpg x1,
+                    ./images/photo4@2.jpg x2"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/photo4_450jpg x1,
+                    ./images/photo4_450@2.jpg x2" media="(min-width: 320px)">
+                    <img class="member_jpg"
+                    src="./images/photo4_450.jpg"
                     alt="Mr number 1, Product Designer"
-                    width="270"
-                    height="260"
-                  />
+                  /></picture>
                   <figcaption class="member__about">
                     <span class="member__name">John Doe</span></br>
                     <span class="member__description">Product Designer</span>
@@ -219,13 +262,19 @@
               </li>
               <li class="team__item">
                 <figure class="member">
+                  <picture><source
+                    srcset="./images/photo5.jpg x1,
+                    ./images/photo5@2.jpg x2"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/photo5_450jpg x1,
+                    ./images/photo5_450@2.jpg x2" media="(min-width: 320px)">
                   <img
                   class="member_jpg"
                     src="images/photo5.jpg"
                     alt="the only one women in management, Frontend Developer"
-                    width="270"
-                    height="260"
-                  />
+                  /></picture>
                   <figcaption class="member__about">
                     <span class="member__name">John Doe</span></br>
                     <span class="member__description">Frontend Developer</span>
@@ -263,13 +312,19 @@
               </li>
               <li class="team__item">
                 <figure class="member">
+                  <picture><source
+                    srcset="./images/photo6.jpg x1,
+                    ./images/photo6@2.jpg x2"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/photo6_450jpg x1,
+                    ./images/photo6_450@2.jpg x2" media="(min-width: 320px)">
                   <img
                   class="member_jpg"
                     src="images/photo6.jpg"
                     alt="Mr nr 2, Marketing"
-                    width="270"
-                    height="260"
-                  />
+                  /></picture>
                   <figcaption class="member__about">
                     <span class="member__name">John Doe</span></br>
                     <span class="member__description">Marketing</span>
@@ -305,13 +360,19 @@
               </li>
               <li class="team__item">
                 <figure class="member">
+                  <picture><source
+                    srcset="./images/photo7.jpg x1,
+                    ./images/photo7@2.jpg x2"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/photo7_450jpg x1,
+                    ./images/photo7_450@2.jpg x2" media="(min-width: 320px)">
                   <img
                   class="member_jpg"
                     src="images/photo7.jpg"
                     alt="Mr nr 3, UI Designer"
-                    width="270"
-                    height="260"
-                  />
+                  /></picture>
                   <figcaption class="member__about">
                     <span class="member__name">John Doe</span></br>
                     <span class="member__description">UI Designer</span>
@@ -463,12 +524,13 @@
             </ul>
         </div>
         <form name="newsletter-singup" class="newsletter">
-          <label for="newsletter-email" class="newsletter__label"> Zapisz się do newslettera 
-            <input id="newsletter-email" class="newsletter__input" type="email" name="email" placeholder="E-mail"> <button class="btn btn--newsletter" type="submit">Zapisz się <svg class="icon--newsletter"><use href="images/icons.svg#icon-newsletter"></use></svg></button>
+          <label for="newsletter-email" class="newsletter__label"> Zapisz się do newslettera
+            <input id="newsletter-email" class="newsletter__input" type="email" name="email" placeholder="E-mail"><button class="btn btn--newsletter" type="submit">Zapisz się <svg class="icon--newsletter"><use href="images/icons.svg#icon-newsletter"></use></svg></button>
           </label>
         </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

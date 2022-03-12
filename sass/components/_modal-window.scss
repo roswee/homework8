@@ -106,7 +106,7 @@
 .user-policy__checkbox {
   visibility: hidden;
 }
-.user-policy__checkbox:checked .user-policy::before {
+.user-policy__checkbox:checked > .user-policy::before {
   background-color: var(--second-color);
   border: none;
   background-image: url(../../images/checked.svg);
