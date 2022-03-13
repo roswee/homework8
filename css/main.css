@@ -32,7 +32,7 @@
 }
 
 .mobile-menu {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   background-color: white;
@@ -78,6 +78,7 @@
 .mobile-social__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .mobile-social__link {
@@ -486,7 +487,7 @@ h4 {
 
 .newsletter__input {
   height: 50px;
-  width: 90vw;
+  width: 86vw;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px;
@@ -1156,7 +1157,7 @@ h4 {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .portfolio__link {
-    width: 356px;
+    max-width: 356px;
   }
   .portfolio__image {
     width: 352px !important;

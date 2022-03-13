@@ -71,7 +71,7 @@
 
 @media screen and (min-width: 768px) and (max-width:1200px){
  .portfolio__link {
-   width: 356px;
+   max-width: 356px;
  }
  .portfolio__image {
    width: 352px !important;
