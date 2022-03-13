@@ -962,7 +962,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .client-img {
-    width: calc(100vw / 3 - 62px);
+    width: calc(100vw / 3 - 68px);
   }
 }
 
