@@ -189,7 +189,7 @@ h4 {
 }
 
 .container {
-  width: 100vw;
+  max-width: 100vw;
   padding: 15px;
   margin: 0 auto;
   align-items: center;
@@ -230,7 +230,6 @@ h4 {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 100%;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -267,7 +266,6 @@ h4 {
 .section {
   padding-top: 60px;
   justify-content: center;
-  width: 100vw;
 }
 
 .logo, .logo:hover, .logo:visited {
@@ -762,7 +760,7 @@ h4 {
 
 .feature {
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   fill: #212121;
 }
 
@@ -774,7 +772,7 @@ h4 {
   align-items: center;
   margin-bottom: 30px;
   justify-content: center;
-  max-width: calc(100vw - 30px);
+  max-width: calc(100% - 30px);
 }
 
 .feature__description {
@@ -1123,7 +1121,7 @@ h4 {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   text-decoration: none;
   color: white;

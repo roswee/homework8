@@ -38,7 +38,7 @@
 
 .feature {
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   fill: #212121;
   &__box {
     display: flex;
@@ -48,7 +48,7 @@
     align-items: center;
     margin-bottom: 30px;
     justify-content: center;
-    max-width: calc(100vw - 30px);
+    max-width: calc(100% - 30px);
   }
   &__description {
     font-size: 14px;
