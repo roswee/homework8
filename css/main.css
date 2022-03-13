@@ -86,7 +86,7 @@
   font-size: 18px;
   letter-spacing: 0.02em;
   color: #2196f3;
-  padding: 10px;
+  padding: 9px;
 }
 
 .mobile-social__link:not(:last-child) {
@@ -104,6 +104,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  margin-left: -10px;
 }
 
 :root {
@@ -773,7 +774,7 @@ h4 {
   align-items: center;
   margin-bottom: 30px;
   justify-content: center;
-  max-width: calc(100% - 30px);
+  max-width: 100%;
 }
 
 .feature__description {
@@ -1099,7 +1100,7 @@ h4 {
 
 .portfolio__items {
   border: 1px solid #eeeeee;
-  margin: 15px;
+  margin: 14px;
   flex-basis: calc(100% - 60px);
 }
 
