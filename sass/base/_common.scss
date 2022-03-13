@@ -70,3 +70,10 @@ h3 {
 h4 {
   color: black;
 }
+
+@media screen and (max-width: 767px) {
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+}
